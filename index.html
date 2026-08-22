@@ -9,61 +9,108 @@
 <body>
      <div class="navbar">
         <h1>Dashboard</h1>
-        <p>profile</p>
-        </div>
+      
+         <p>profile</p>
+       </div>
+
     
        <div id="layout">
-         <div class="left-sidebar"><h1><span>EventEase</span></h1>
-        <h2>Dashboard</h2>
+        <div class="left-sidebar"><h1>Event<span>Ease</span></h1>
+    <p>Dashboard</p>
         <p>Event</p>
         <p>My registrations</p>
         <p>Schedule</p>
         <p>clubs & societies</p>
         <p>create event</p>
         <p>settings</p>
+       <p id="log">logout</p>
     </div>
  <div id="content">
        
-    <table style="border: 1px solid black;">
+    <table>
         <tr>
-            <th>Event Name</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Location</th>
-            <th>Actions</th>
+            <th colspan="7" id="calendar-header">Calendar <span>August 2026</span></th>
+          
         </tr>
         <tr>
-            <td>Event 1</td>
-            <td>2024-06-01</td>
-            <td>10:00 AM</td>
-            <td>Location 1</td>
-            <td><button>Edit</button><button>Delete</button></td>
-        </tr>
-        <tr>
-            <td>Event 2</td>
-            <td>2024-06-02</td>
-            <td>2:00 PM</td>
-            <td>Location 2</td>
-            <td><button>Edit</button><button>Delete</button></td>
-        </tr>
-        <tr>
-            <td>Event 3</td>
-            <td>2024-06-03</td>
-            <td>6:00 PM</td>
-            <td>Location 3</td>
-            <td><button>Edit</button><button>Delete</button></td>
-        </tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td class="highlight">12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td class="highlight">19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td class="highlight">25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+       
     </table>
  </div>
  
    
     
     <div id="right-sidebar">
-        <h>Upcoming Events</h>
-        <p>TechFest 2026</p>
-        <p>Music Concert 2026</p>
-        <p>Art Exhibition 2026</p>
-         </div>
+        <h3>Upcoming Events</h3>
+       <div class="card">
+        <p>TECH FEST</p>
+        <li>12 august</li>
+        <li>10:00 am</li>
+        <li>Auditorium</li>
+       </div>
+       <div class="card">
+        <p>BATTLE OF THE BANDS</p>
+        <li>19 august</li>
+        <li>2:00 pm</li> 
+        <li>Auditorium</li>       
+       </div>
+       <div class="card">
+        <p>SPORTS DAY</p>
+        <li>25 august</li>
+        <li>9:00 am</li>
+        <li>Gymnasium</li>
+       </div>
     </div>
 </body>
 </html>

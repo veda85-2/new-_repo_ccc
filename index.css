@@ -5,58 +5,139 @@
 }
 body{
     font-family: Arial, sans-serif;
-    background-color: #cbd7ec;
+    background-image: url("background image.png");
+    background-size: cover;
 }
+
 .navbar{
-    background-color: #f2f2f2;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
+   border-radius: 0px 0px 10px 10px;
+    position: sticky;
+      color: #100f0f;
+      /*background: rgba(255, 255, 255, 0.9); */
+
+    box-shadow:
+        0 4px 15px rgba(100, 201, 137, 0.15),
+        0 0 20px rgba(100, 201, 137, 0.08);
+
+    border-bottom: 1px solid rgba(100, 201, 137, 0.2);
 }
 .navbar h1{
-    font-size: 24px;
-    color: #333;
+    font-size: 30px;
 }
-.navbar:hover{
-    background-color: #3d8bd4c5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
+.navbar h1:hover{
+    color: #2e993e;
+    transition: color 0.3s;
+    
 }
+
+.navbar p{
+    font-size: 20px;
+}
+
 
 #layout{
     display: flex;
     gap: 10px;
    height: 100vh;
    padding: 20px;
+  
 }
 .left-sidebar{
     width: 200px;
     padding: 20px;
-    background-color: #060491;
+    color: #100f0f;
    border-radius: 10px;
    height: 100%;
+   display: flex;
+   flex-direction: column;
+    gap: 30px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 
+        4px 0 15px rgba(100, 201, 137, 0.15),
+        0 0 20px rgba(100, 201, 137, 0.08);
+
+    border-right: 1px solid rgba(100, 201, 137, 0.2);
+   
+
+}
+
+.left-sidebar p{
+    margin: 0;
+    padding: 0;
+    color: #060303;
+   text-align: left;
+   font-size: 16px;
+   text-decoration: green underline;
+}
+.left-sidebar p:hover{
+    box-shadow: 0 0 10px rgb(46, 145, 84, 0.5);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+    color: rgb(42, 113, 68);
+    background-color: rgba(100, 201, 137, 0.12);
+    transform: translateX(5px);
    
 }
+
+
+span{
+    color: rgba(34, 197, 94, 1);
+    font-size: 28px;
+}
+#log{
+    margin-top: 250px;
+    font-size: 16px;
+    color: #060303;
+}
+   
+
 #content{
     display: flex;
     flex-direction: row;
     flex: 1;
     padding: 20px;
+    position: relative;
+       left: 220px;
 }
 table{
-    width: 100%;
-    border-collapse: collapse;
-   
+    width: 800px;
+    border-collapse: separate;
+   background-color: #f6f6fc; 
+   border-radius: 10px;
+   table-layout: fixed;
+
 }
 table th, table td{
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 0.5px solid #0a550b;
+    padding: 20px;
     text-align: left;
-    border-radius: 5px;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(49, 126, 66, 0.2);
+    
+}
+#calendar-header{
+    font-size: 26px;
+    font-weight: bold;
+    color: #32922d;
+   
+
+}
+#calendar-header span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #050605;
+    margin-left: 200px;
+   font-style: italic;
+    text-shadow: 0 2px 4px rgba(8, 8, 8, 0.5);
 }
 
 #right-sidebar{
@@ -65,5 +146,47 @@ table th, table td{
     background-color: #f6f6fc;
     border-left: 1px solid #ddd;
     border-radius: 10px;
-  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* justify-content: space-between; */
+    gap: 30px;
+     box-shadow:
+        4px 0 20px rgba(100, 201, 137, 0.25),
+        0 0 30px rgba(100, 201, 137, 0.10);
+}
+
+.card {
+    background-color: #f2f2f2;
+    width:auto;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid rgb(34, 197, 94);
+}
+
+#right-sidebar li {
+    font-size: 10px;
+    color: #1b1f1c;
+   margin-top: 15px;
+}
+
+#right-sidebar p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(105, 187, 102);
+    margin-bottom: 10px;
+}
+.highlight{
+   
+    background-color: rgb(34, 197, 94, 0.3);
+    color: rgb(18, 17, 17);
+    border-radius: 5px;
+    border: 1px solid rgb(34, 197, 94);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
 }
